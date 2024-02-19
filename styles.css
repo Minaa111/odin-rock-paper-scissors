@@ -1,8 +1,90 @@
+body {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 200px;
+    background-color: #2f2b3a;
+}
+
 .button img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+
 }
 
 .button {
     font-size: 0px;
+    border-radius: 20px;
+    border-color:#a688fa;
+    border-width: 8px;
+    background-color: #282431;
+    padding: 10px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1625;
+    color: white;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2f2b3a;;
+}
+
+#footer {
+    display: flex;
+    font-size: large;
+    padding: 25px;
+    justify-content: center;
+    background-color: #1a1625;
+    color: white;
+}
+
+
+#game{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.imgPlaceholder {
+    background-color: #000000;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+#gameHeader {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    font-style: italic;
+}
+
+#vs {
+    font-size: 30px;
+}
+
+#playerChoice, #computerChoice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
