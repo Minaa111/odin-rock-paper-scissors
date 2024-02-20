@@ -6,6 +6,10 @@
     <title>Rock Paper Scissors</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap')
+    </style>
+        
 </head>
 <body>
 
@@ -14,7 +18,7 @@
     </div>
 
     
-    <div id="result">
+    <div id="container">
         <div id="gameHeader">
             <h2>
                 Whoever gets 5 points wins!
@@ -23,24 +27,24 @@
 
         <div id="game">
             <div id="playerChoice">
-                <div class="imgPlaceholder">
+                <div class="playerImgPlaceholder">
                     
                 </div>
 
-                <div id="playerScore">
-                    You: 
+                <div class="playerScore">
+                    
                 </div>
             </div>
             
             <p id="vs">vs</p>
 
             <div id="computerChoice">
-                <div class="imgPlaceholder">
+                <div class="computerImgPlaceholder">
                     
                 </div>
 
-                <div id="computerScore">
-                    Computer: 
+                <div class="computerScore">
+                    
                 </div>
             </div>
         </div>
@@ -49,17 +53,21 @@
 
     <div id="choices">
         <button class="button">
-            rock
+            Rock
             <img src="images/rock.png">
         </button>
         <button class="button">
-            paper
+            Paper
             <img src="images/paper.png">
         </button>
         <button class="button">
-            scissor
+            Scissor
             <img src="images/scissor.png">
         </button>
+    </div>
+
+    <div class="newGameButton">
+        <button id="newGame">New Game</button>
     </div>
 
     <div id="footer">
